@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Baleeted</string>
+    <string name="enable_switch">Enable Encouragation:</string>
+	<string name="min_delay_lbl">Miniminutes of Delaying:</string>
+	<string name="max_delay_lbl">Maximinutes of Delaying:</string>
+	<string name="save_button">Do It. Nowish.</string>
+	
+	<string name="default_message">(this is real)\nSystem Report:\nEverything is fine. Nothing is ruined.</string>
+	
+	<string name="running">Fondue pot, coming up.</string>
+	<string name="not_running">I\'m outta here.</string>
+</resources>

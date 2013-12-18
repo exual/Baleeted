@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+
+    <Switch
+        android:id="@+id/enableSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enable_switch"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/lblMinDelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enableSwitch"
+        android:labelFor="@+id/minDelay"
+        android:text="@string/min_delay_lbl" />
+    
+    <NumberPicker
+        android:id="@+id/minDelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblMinDelay"
+        android:layout_toRightOf="@+id/lblMinDelay"
+	/>
+
+    <TextView
+        android:id="@+id/lblMaxDelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minDelay"
+        android:labelFor="@+id/maxDelay"
+        android:text="@string/max_delay_lbl" />
+
+    <NumberPicker
+        android:id="@+id/maxDelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/minDelay"
+        android:layout_below="@+id/minDelay"        
+    />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblMaxDelay"
+        android:layout_below="@+id/maxDelay"
+        android:onClick="saveClicked"
+        android:text="@string/save_button"
+        android:layout_centerHorizontal="true" 
+    />
+
+
+</RelativeLayout>
