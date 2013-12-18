@@ -51,9 +51,7 @@ public class Reassure extends BroadcastReceiver {
 		// give me a time between min and max time (which both are in minutes)
 		long fireTime = 60000 * (new Random().nextInt(maxtime - mintime) + mintime);
 		fireTime += SystemClock.elapsedRealtime();
-		
-		fireTime = SystemClock.elapsedRealtime() + 10000;
-		
+				
 		alMan.set(AlarmManager.ELAPSED_REALTIME, fireTime, outgoing);
 	}
 	
